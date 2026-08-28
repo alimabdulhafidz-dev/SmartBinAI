@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monitoring | SmartBin AI</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        body {
+            background: #f4f4f4;
+        }
+
+        .artikel {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .artikel h1 {
+            color: #0A2540;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .artikel h2 {
+            color: #00C853;
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .artikel p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .kembali {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            background: #00C853;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .kembali:hover {
+            background: #009624;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .artikel {
+                margin: 25px 15px;
+                padding: 25px;
+            }
+
+            .artikel h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <article class="artikel">
+
+        <h1>Monitoring SmartBin AI</h1>
+
+        <p>
+            Monitoring SmartBin adalah fitur yang 
+            memungkinkan kondisi tempat sampah dipantau 
+            tanpa harus memeriksa wadah secara langsung. 
+            Sistem dapat memberikan informasi mengenai 
+            kondisi dan kapasitas tempat sampah sehingga 
+            pengguna atau pengelola dapat mengetahui kapan 
+            sampah perlu dikosongkan.
+
+            Fitur ini menjadi bagian penting dalam 
+            pengembangan SmartBin AI karena pengelolaan 
+            sampah tidak hanya membutuhkan proses pemilahan, 
+            tetapi juga pemantauan kondisi tempat penampungan.
+
+        </p>
+
+        <h2>Mengapa Monitoring Dibutuhkan?</h2>
+
+        <p>
+        Tempat sampah yang sudah penuh sering kali terlambat 
+        ditangani. Jika dibiarkan terlalu lama, sampah dapat 
+        menumpuk dan membuat area di sekitarnya menjadi 
+        kurang nyaman.
+
+        Dengan sistem monitoring, kondisi tempat sampah dapat 
+        diketahui lebih cepat. Pengelola tidak perlu selalu 
+        membuka atau memeriksa wadah satu per satu untuk 
+        mengetahui apakah kapasitasnya masih tersedia.
+
+        Informasi dari sistem dapat digunakan sebagai dasar 
+        untuk menentukan kapan sampah perlu dikosongkan.
+        </p>
+
+        <h2>Cara Kerja Sistem Monitoring</h2>
+        <p>
+            Monitoring dapat dilakukan dengan menggunakan 
+            sensor yang ditempatkan pada bagian tertentu 
+            dari tempat sampah. Sensor tersebut membaca 
+            kondisi atau jarak antara sensor dengan 
+            permukaan sampah.
+
+            Data yang diperoleh kemudian diproses oleh 
+            mikrokontroler. Sistem dapat mengubah hasil 
+            pengukuran menjadi informasi mengenai tingkat 
+            kepenuhan tempat sampah.
+
+        </p>
+
+        <p>
+            Sebagai contoh, sistem dapat menampilkan kondisi:
+        </p>
+
+        <ul>
+
+            <li>25% — masih tersedia banyak ruang.</li>
+            <li>50% — kapasitas mulai terisi.</li>
+            <li>75% — tempat sampah mulai mendekati penuh.</li>
+            <li>100% — tempat sampah perlu segera dikosongkan.</li>
+            
+        </ul>
+
+        <p>
+            Nilai tersebut dapat disesuaikan dengan desain 
+            dan kebutuhan sistem.
+        </p>
+
+        <h2>Informasi yang Dapat Dipantau</h2>
+
+        <p>
+            Sistem monitoring SmartBin dapat 
+            dikembangkan untuk menampilkan beberapa 
+            informasi. Salah satunya adalah persentase 
+            kapasitas tempat sampah.
+
+            Selain kapasitas, sistem juga dapat menampilkan 
+            kategori wadah, status perangkat, dan waktu 
+            terakhir data diperbarui.
+
+            Jika sistem sudah terhubung dengan internet, 
+            informasi tersebut dapat ditampilkan pada halaman 
+            monitoring sehingga dapat dipantau melalui perangkat 
+            yang memiliki akses ke sistem.
+        </p>
+
+        <h2>Pemberitahuan Ketika Sampah Penuh</h2>
+
+        <p>
+            Salah satu pengembangan yang dapat ditambahkan 
+            adalah sistem pemberitahuan otomatis.
+
+            Ketika kapasitas tempat sampah mencapai batas tertentu, 
+            sistem dapat memberikan peringatan kepada pengelola. 
+            Misalnya, ketika kapasitas sudah mencapai 80%, sistem 
+            dapat memberikan status bahwa tempat sampah perlu segera 
+            diperiksa.
+
+            Pemberitahuan tersebut dapat dikembangkan melalui 
+            berbagai media komunikasi sesuai dengan sistem yang 
+            digunakan.
+        </p>
+
+        <h2>Monitoring untuk Beberapa Wadah</h2>
+
+        <p>
+            SmartBin yang memiliki lebih dari satu kategori tempat 
+            sampah juga dapat menggunakan monitoring secara terpisah.
+
+            Sebagai contoh, wadah organik dan anorganik masing-masing 
+            memiliki sensor. Sistem kemudian dapat menampilkan kondisi 
+            kedua wadah secara terpisah.
+
+            Dengan cara tersebut, pengelola dapat mengetahui wadah 
+            mana yang sudah penuh tanpa harus memeriksa semuanya secara 
+            langsung.
+        </p>
+
+        <h2>Manfaat Monitoring SmartBin</h2>
+
+        <p>
+            Fitur monitoring dapat membantu membuat pengelolaan sampah
+        </p>
+
+               <div class="feature-card" onclick="window.location.href='artikel/../index.html'">
+    <button>kembali</button>
+</div>
+    </article>
+
+</body>
+</html>

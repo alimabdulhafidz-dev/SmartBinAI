@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Auto Sortir | SmartBin AI</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        body {
+            background: #f4f4f4;
+        }
+
+        .artikel {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .artikel h1 {
+            color: #0A2540;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .artikel h2 {
+            color: #00C853;
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .artikel p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .kembali {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            background: #00C853;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .kembali:hover {
+            background: #009624;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .artikel {
+                margin: 25px 15px;
+                padding: 25px;
+            }
+
+            .artikel h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <article class="artikel">
+
+        <h1>Auto Sortir Sampah: Teknologi Cerdas untuk 
+            Memisahkan Sampah Secara Otomatis</h1>
+
+        <p>
+            Auto Sortir Sampah adalah sistem yang dirancang 
+            untuk membantu memisahkan sampah secara otomatis 
+            berdasarkan jenisnya. Teknologi ini dapat
+            memanfaatkan sensor, kamera, mikrokontroler, 
+            dan kecerdasan buatan (AI) untuk mengenali benda 
+            yang masuk kemudian menentukan tempat pembuangan 
+            yang sesuai.
+
+            Pada sistem konvensional, sampah biasanya harus 
+            dipilah secara manual. Cara tersebut membutuhkan 
+            waktu dan sering kali menyebabkan sampah organik 
+            dan anorganik tercampur. Dengan adanya sistem Auto 
+            Sortir, proses pemilahan dapat dilakukan dengan 
+            lebih cepat, praktis, dan teratur.
+        </p>
+
+        <h2>Mengapa Pemilahan Sampah Penting?</h2>
+
+        <p>
+            Sampah yang tercampur akan lebih sulit untuk 
+            diproses kembali. Sampah plastik, kertas, sisa 
+            makanan, dan jenis sampah lainnya memiliki 
+            karakteristik yang berbeda sehingga membutuhkan 
+            penanganan yang berbeda pula.
+
+            Jika sampah sudah dipisahkan sejak awal, proses 
+            daur ulang dapat menjadi lebih mudah. Sampah yang 
+            masih memiliki nilai guna juga dapat dikumpulkan 
+            untuk dimanfaatkan kembali.
+
+            Selain itu, pemilahan sampah dapat mengurangi jumlah 
+            sampah yang berakhir di tempat pembuangan akhir dan 
+            membantu menciptakan lingkungan yang lebih bersih.
+        </p>
+
+        <h2>Cara Kerja Auto Sortir Sampah</h2>
+
+        <p>
+            Secara umum, Auto Sortir Sampah bekerja melalui 
+            beberapa tahap.
+
+            Pertama, pengguna memasukkan sampah ke bagian tempat 
+            masuk. Setelah itu, kamera atau sensor akan mengambil 
+            informasi mengenai benda tersebut.
+
+            Jika menggunakan teknologi AI, gambar sampah dapat 
+            dianalisis untuk menentukan kategori benda. Sistem 
+            kemudian mengirimkan hasil pengenalan kepada pengendali, 
+            seperti mikrokontroler.
+
+            Setelah jenis sampah diketahui, mekanisme penggerak 
+            seperti servo dapat mengarahkan sampah menuju tempat 
+            yang telah ditentukan. Dengan demikian, pengguna tidak 
+            perlu memilah sampah secara manual.
+
+            Contohnya, ketika sistem mengenali sebuah botol plastik 
+            sebagai sampah anorganik, mekanisme pemilah akan bergerak 
+            sehingga botol tersebut masuk ke wadah anorganik. Jika 
+            sistem mengenali sisa makanan sebagai sampah organik, sampah 
+            tersebut diarahkan ke wadah organik.
+        </p>
+
+        <h2>Peran Artificial Intelligence</h2>
+
+        <p>
+            Artificial Intelligence atau AI menjadi salah satu teknologi 
+            yang dapat digunakan untuk membuat sistem pemilahan sampah 
+            menjadi lebih pintar.
+
+            AI dapat dilatih menggunakan berbagai gambar sampah. Dari 
+            data tersebut, sistem belajar mengenali pola tertentu pada 
+            objek, seperti bentuk, warna, dan karakteristik visual lainnya.
+
+            Setelah mendapatkan pelatihan yang cukup, model AI dapat 
+            digunakan untuk memperkirakan kategori sampah berdasarkan 
+            gambar yang diberikan oleh kamera.
+
+            Teknologi ini membuat proses pemilahan tidak hanya bergantung 
+            pada bentuk tempat sampah, tetapi juga pada kemampuan sistem 
+            dalam mengenali objek.
+        </p>
+
+        <h2>Komponen yang Dapat Digunakan</h2>
+
+        <p>
+            Sebuah Auto Sortir Sampah dapat dibuat menggunakan 
+            beberapa komponen elektronik dan mekanik, tergantung 
+            desain yang digunakan.
+
+            Beberapa komponen yang dapat digunakan antara lain:
+        </p>
+
+        <ol>
+            <li>Kamera untuk mengambil gambar sampah.</li>
+            <li>ESP32-CAM atau perangkat kamera lainnya.</li>
+            <li>Mikrokontroler sebagai pengendali sistem.</li>
+            <li>Model AI untuk mengenali jenis sampah.</li>
+            <li>Servo motor untuk menggerakkan mekanisme pemilah.</li>
+            <li>Sensor untuk mendeteksi keberadaan sampah.</li>
+            <li>Wadah terpisah untuk setiap kategori sampah.</li>
+            <li>Sumber daya listrik untuk menjalankan sistem.</li>
+        </ol>
+
+        <p>
+
+            Setiap komponen memiliki tugas masing-masing dan 
+            bekerja sebagai satu kesatuan agar proses pemilahan 
+            dapat berjalan secara otomatis.
+        </p>
+        
+
+        <h2>Kelebihan Auto Sortir Sampah</h2>
+
+        <p>
+            Penggunaan Auto Sortir Sampah memiliki beberapa 
+            keuntungan. Salah satunya adalah mengurangi 
+            pekerjaan pemilahan secara manual. Sistem juga 
+            dapat membantu membuat proses pembuangan sampah 
+            menjadi lebih teratur.
+
+            Selain itu, teknologi ini dapat menjadi media 
+            pembelajaran mengenai penerapan AI, robotika, 
+            sensor, dan mikrokontroler dalam kehidupan sehari-hari.
+
+            Jika dikembangkan lebih lanjut, sistem dapat 
+            dilengkapi dengan fitur tambahan seperti pemantauan 
+            kapasitas tempat sampah, pemberitahuan ketika wadah 
+            sudah penuh, serta pemantauan melalui perangkat lain.
+        </p>
+
+        <h2>Tantangan dalam Pembuatan Sistem</h2>
+
+        <p>
+            Meskipun terlihat sederhana, membuat Auto Sortir Sampah 
+            membutuhkan beberapa tahap pengembangan.
+
+            Salah satu tantangannya adalah kemampuan AI dalam 
+            mengenali sampah dengan kondisi yang berbeda. Sebuah 
+            benda dapat terlihat berbeda ketika terkena cahaya yang 
+            
+            berbeda, memiliki bentuk yang tidak biasa, atau tertutup 
+            sebagian oleh benda lain.
+
+            Selain itu, mekanisme pemilah harus dibuat dengan tepat 
+            agar sampah dapat diarahkan ke wadah yang benar. Kecepatan 
+            kamera, proses pengenalan AI, dan pergerakan mekanik juga 
+            perlu disesuaikan agar sistem dapat bekerja dengan baik.
+        </p>
+
+         <h2>Pengembangan di Masa Depan</h2>
+
+        <p>
+            Auto Sortir Sampah masih dapat dikembangkan menjadi sistem 
+            yang lebih lengkap. Misalnya, sistem dapat mengenali lebih 
+            banyak kategori sampah seperti plastik, kertas, logam, kaca, 
+            dan organik.
+
+            Sistem juga dapat dihubungkan dengan jaringan internet 
+            sehingga kondisi tempat sampah dapat dipantau dari jarak 
+            jauh. Informasi seperti jumlah sampah, kapasitas wadah, dan 
+            kondisi sistem dapat ditampilkan pada sebuah dashboard.
+
+            Dengan pengembangan tersebut, tempat sampah tidak hanya 
+            berfungsi sebagai wadah pembuangan, tetapi juga menjadi 
+            perangkat pintar yang mampu memberikan informasi dan melakukan 
+            tindakan secara otomatis.
+        </p>
+
+         <h2>Kesimpulan</h2>
+
+        <p>
+            Auto Sortir Sampah merupakan salah satu contoh penerapan 
+            teknologi untuk membantu menyelesaikan permasalahan 
+            pengelolaan sampah. Dengan menggabungkan kamera, AI, sensor, 
+            mikrokontroler, dan mekanisme otomatis, proses pemilahan 
+            dapat dilakukan dengan lebih praktis.
+
+            Teknologi ini bukan hanya bertujuan untuk membuat tempat 
+            sampah menjadi lebih modern, tetapi juga dapat membantu 
+            meningkatkan kesadaran mengenai pentingnya pemilahan sampah.
+
+            Dengan pengembangan yang tepat, Auto Sortir Sampah dapat 
+            menjadi bagian dari solusi teknologi untuk menciptakan 
+            lingkungan yang lebih bersih, tertata, dan ramah lingkungan.
+        </p>
+
+        
+               <div class="feature-card" onclick="window.location.href='artikel/../index.html'">
+    <button>kembali</button>
+</div>
+
+    </article>
+
+</body>
+</html>

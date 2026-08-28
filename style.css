@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #0A2540;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00C853;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #00C853, #0099ff);
+    color: white;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+    animation: muncul 1.2s;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.hero button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    background: white;
+    color: #00C853;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= VIDEO DEMO ================= */
+
+#videoDemo {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+#videoDemo video {
+    width: 90%;
+    max-width: 900px;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* ================= HERO IMAGE ================= */
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    animation: naikTurun 3s infinite ease-in-out;
+}
+
+/* ================= JUDUL SECTION ================= */
+
+section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #0A2540;
+}
+
+/* ================= FITUR UNGGULAN ================= */
+
+#fitur {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.fitur-unggulan {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.fitur-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Kartu fitur */
+.fitur-card,
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.fitur-card:hover,
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* LOGO / GAMBAR FITUR DIPERKECIL */
+.feature-card img,
+.fitur-card img,
+.cards img {
+    width: 35px ;
+    height: 35px ;
+    object-fit: contain ;
+    margin-bottom: 8px ;
+}
+
+.fitur-card .icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.fitur-card h3,
+.feature-card h3 {
+    margin: 10px 0;
+    color: #0A2540;
+}
+
+.fitur-card p,
+.feature-card p {
+    color: #777;
+    line-height: 1.6;
+}
+
+/* Tombol baca artikel */
+.feature-card button,
+.fitur-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: #00C853;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.feature-card button:hover,
+.fitur-card button:hover {
+    background: #009624;
+    transform: scale(1.05);
+}
+
+/* ================= ARTIKEL ================= */
+
+.artikel {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    line-height: 1.8;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.artikel h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #0A2540;
+}
+
+.artikel h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #0A2540;
+}
+
+.artikel p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.kembali {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: #00C853;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.kembali:hover {
+    background: #009624;
+}
+
+/* ================= TOMBOL TUTUP ARTIKEL ================= */
+
+.tutup-artikel {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background: #e53935;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ================= CARD ================= */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #0A2540;
+}
+
+/* ================= TENTANG ================= */
+
+#tentang {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+#tentang p {
+    max-width: 900px;
+    margin: auto;
+    line-height: 2;
+    font-size: 18px;
+}
+
+/* ================= COUNTER ================= */
+
+.counter {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 10%;
+    background: #0A2540;
+    color: white;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.counter div {
+    text-align: center;
+    min-width: 150px;
+}
+
+.counter h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+/* ================= GALERI ================= */
+
+#galeri {
+    padding: 80px 10%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* ================= KONTAK ================= */
+
+#kontak {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+#kontak p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+#kontak input,
+#kontak textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#kontak button {
+    padding: 15px 50px;
+    background: #00C853;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#kontak button:hover {
+    background: #009624;
+    transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* ================= ANIMASI ================= */
+
+@keyframes naikTurun {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes munculArtikel {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 5%;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-image img {
+        max-width: 350px;
+    }
+
+    #videoDemo {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter h1 {
+        font-size: 45px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    .artikel {
+        margin: 25px 15px;
+        padding: 20px;
+    }
+
+    .artikel h1 {
+        font-size: 26px;
+    }
+}

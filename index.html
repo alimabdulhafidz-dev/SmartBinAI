@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SmartBin AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#0d6efd;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+z-index:1000;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:white;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#FFD54F;
+}
+
+.hero{
+margin-top:80px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 8%;
+background:linear-gradient(135deg,#0d6efd,#00c853);
+color:white;
+flex-wrap:wrap;
+min-height:90vh;
+}
+
+.hero-text{
+flex:1;
+min-width:300px;
+}
+
+.hero-text h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.hero button{
+padding:15px 35px;
+border:none;
+border-radius:30px;
+background:#FFD54F;
+font-size:18px;
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+.hero button:hover{
+transform:scale(1.08);
+}
+
+.hero-image{
+flex:1;
+text-align:center;
+min-width:300px;
+}
+
+.hero-image img{
+width:90%;
+max-width:450px;
+animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0);}
+}
+
+section{
+padding:80px 8%;
+}
+
+section h2{
+text-align:center;
+font-size:36px;
+margin-bottom:50px;
+color:#0d6efd;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+width:300px;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-15px);
+}
+
+.card img{
+width:100px;
+margin-bottom:20px;
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.counter{
+display:flex;
+justify-content:space-around;
+background:#0d6efd;
+color:white;
+text-align:center;
+flex-wrap:wrap;
+}
+
+.counter div{
+padding:20px;
+}
+
+.counter h1{
+font-size:55px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:20px;
+transition:.4s;
+cursor:pointer;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+#kontak{
+text-align:center;
+}
+
+form{
+max-width:550px;
+margin:auto;
+}
+
+form input,
+form textarea{
+width:100%;
+padding:15px;
+margin:15px 0;
+border-radius:10px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+
+
+
+form button{
+width:100%;
+padding:15px;
+background:#0d6efd;
+color:white;
+border:none;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+form button:hover{
+background:#0056d2;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+@media(max-width:900px){
+
+header{
+flex-direction:column;
+padding:15px;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+margin:0 10px;
+}
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:38px;
+}
+
+.counter{
+flex-direction:column;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">SmartBin AI</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#fitur">Fitur</a>
+<a href="#tentang">Tentang</a>
+<a href="#galeri">Galeri</a>
+<a href="#kontak">Kontak</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>SmartBin AI</h1>
+
+<p>
+Tempat Sampah Pintar berbasis Artificial 
+Intelligence (AI) yang mampu mengenali 
+dan memilah jenis sampah secara otomatis, 
+memantau kapasitas tempat sampah secara 
+real-time, serta membantu menciptakan 
+lingkungan yang lebih bersih, sehat, 
+dan terkelola.
+</p>
+
+<button class="demo-btn" onclick="window.location.href='video/demo/demo.mp4'">
+    Lihat Demo
+</button>
+
+<div class="hero-image">
+    <img src="../images/hero.jpg" alt="SmartBin AI">
+</div>
+
+</section>
+
+
+
+<section id="fitur">
+
+<h2>Fitur Unggulan</h2>
+
+<div class="cards">
+
+<div class="feature-card" onclick="window.location.href='artikel/../ai.html'">
+    <img src="../images/ai.png" alt="AI">
+    <h3>Klasifikasi Sampah dengan AI</h3>
+    <p>AI membantu mengenali jenis sampah secara otomatis.</p>
+    <button>Baca Selengkapnya</button>
+</div>
+
+<div class="feature-card" onclick="window.location.href='artikel/../auto-sortir.HTML'">
+    <img src="../images/recycle.png" alt="AI">
+    <h3>Auto Sortir</h3>
+    <p>Memilah sampah secara otomatis berdasarkan jenisnya.</p>
+    <button>Baca Selengkapnya</button>
+</div>
+
+<div class="feature-card" onclick="window.location.href='artikel/../Monitoring.html'">
+    <img src="../images/monitor.png" alt="Monitoring">
+
+    <h3>Monitoring</h3>
+
+    <p>Mengontrol sampah secara otomatis berdasarkan jenis dan kapaitas nya.</p>
+
+    <button>Baca Selengkapnya</button>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="tentang smartbin ai">
+
+<h2>Tentang SmartBin AI</h2>
+
+<p style="text-align:center;max-width:900px;margin:auto;line-height:2;font-size:18px;">
+
+SmartBin AI merupakan inovasi tempat sampah pintar yang menggabungkan teknologi Artificial Intelligence, kamera, sensor ultrasonik, servo, dan Internet of Things (IoT). Sistem ini membantu masyarakat memilah sampah secara otomatis, mengetahui kapasitas tempat sampah, serta mengirimkan notifikasi ketika tempat sampah sudah penuh.
+
+</p>
+
+</section>
+
+<section class="counter">
+
+<div>
+
+<h1 id="user">15</h1>
+
+<p>Pengguna</p>
+
+</div>
+
+<div>
+
+<h1 id="trash">738</h1>
+</h1>
+
+<p>Sampah Dipilah</p>
+
+</div>
+
+<div>
+
+<h1 id="city">2</h1>
+
+<p>Kota</p>
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="galeri">
+
+<h2>Galeri</h2>
+
+<div class="gallery">
+
+<img src="../images/hero.jpg" alt="SmartBin AI">
+<img src="../images/ai.png" alt="Artificial Intelligence">
+<img src="../images/recycle.png" alt="Auto Sorting">
+<img src="../images/monitor.png" alt="Monitoring">
+
+
+
+</div>
+
+</section>
+
+<section>
+    <h2>Kontak Pemesanan</h2>
+
+    <div style="text-align: center;">
+        <button 
+            type="button"
+            onclick="window.open('https://wa.me/6281234567890', '_blank')"
+            style="
+                background-color: #2843cd;
+                color: white;
+                border: none;
+                padding: 14px 28px;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.3s;
+            "
+            onmouseover="this.style.backgroundColor='#1ebe5d'"
+            onmouseout="this.style.backgroundColor='#25D366'"
+        >
+            WhatsApp Admin
+        </button>
+    </div>
+</section>
+
+
+<section id="kritik dan saran">
+
+<h2>Kritik Dan Saran</h2>
+
+<form action="#">
+
+<input type="text" placeholder="Nama Anda" required>
+
+<input type="email" placeholder="Email Anda" required>
+
+<textarea rows="6" placeholder="Tulis pesan Anda..." required></textarea>
+
+<button type="submit">Kirim Pesan</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>&copy; 2026 SmartBin AI | Future Smart Waste Management</p>
+
+</footer>
+
+<script>
+
+document.getElementById("demo").addEventListener("click",function(){
+
+alert("Selamat Datang di SmartBin AI!\n\nWebsite ini menampilkan konsep Tempat Sampah Pintar berbasis Artificial Intelligence.");
+
+});
+
+function counter(id,target){
+
+let angka=0;
+
+let interval=setInterval(function(){
+
+angka++;
+
+document.getElementById(id).innerHTML=angka.toLocaleString();
+
+if(angka>=target){
+
+clearInterval(interval);
+
+}
+
+},5);
+
+}
+
+counter("user",500);
+
+counter("trash",1500);
+
+counter("city",25);
+
+document.querySelector("form").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Terima kasih! Pesan Anda berhasil dikirim.");
+
+this.reset();
+
+});
+
+window.addEventListener("scroll",function(){
+
+const header=document.querySelector("header");
+
+if(window.scrollY>50){
+
+header.style.background="#0056d2";
+
+}else{
+
+header.style.background="#0d6efd";
+
+}
+
+});
+
+const images=document.querySelectorAll(".gallery img");
+
+images.forEach(function(img){
+
+img.addEventListener("click",function(){
+
+
+
+
+
+alert("Gambar: " + this.alt);
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
+
+
